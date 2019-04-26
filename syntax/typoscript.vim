@@ -2,9 +2,6 @@ if exists("b:current_syntax")
 	finish
 endif
 
-" Setup
-setlocal isident=@,48-57,-,.,_,192-255
-
 " Top level elements
 syntax region tsComment keepend start="^\s*\/\*" end="^\s*\*\/.*$"
 syntax region tsComment keepend start="^\s*#" end="$"
